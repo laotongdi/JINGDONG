@@ -1,0 +1,44 @@
+/* components/tuij/tuij.wxss */
+.tuijian {
+  position: relative;
+  margin-top: 50rpx;
+  display: flex;
+  padding: 0 20rpx 0 20rpx;
+  align-items: center;
+}
+
+.tuijian .tjz,
+.tjy {
+  flex: 1 auto;
+  height: 3rpx;
+  background-color: #ccc;
+}
+
+.tuijian .tjzj {
+  position: relative;
+  color: #999;
+  padding: 0 35rpx;
+}
+
+.tuijian .tjzj::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: rotate(45deg);
+  margin-top: -5rpx;
+  width: 10rpx;
+  height: 10rpx;
+  background: #ccc;
+}
+.tuijian .tjzj::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: rotate(45deg);
+  margin-top: -5rpx;
+  width: 10rpx;
+  height: 10rpx;
+  background: #ccc;
+}

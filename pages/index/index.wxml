@@ -1,0 +1,103 @@
+<!--index.wxml-->
+<view class="top">
+  <view class="nav">
+    <image src="/images/dog.png" mode="" />
+    <input type="text" bindtap="gosousuo"/>
+    <swiper class="tops" autoplay="autoplay" circular vertical="true" interval="3000" bindchange='onSlideChangeEnd'>
+      <swiper-item wx:for="{{tlist}}" wx:key="id">
+        <view>{{item.text}}</view>
+      </swiper-item>
+    </swiper>
+    <view class="icon" bindtap="gosousuo">
+      <image src="/images/sousuo.png" mode="" />
+    </view>
+    <text class="button">搜索</text>
+  </view>
+</view>
+
+
+<view style="height: 100%;">
+  <swiper style="height: 100%;">
+    <swiper-item>
+      <scroll-view class="container" scroll-y="true">
+
+        <view class="swiper">
+          <view class="swiper-xiao">
+            <swiper class="swiper-container" indicator-dots indicator-color="#ccc" indicator-active-color="red" autoplay interval="3000" circular>
+              <swiper-item wx:for="{{list}}" wx:key="id">
+                <image src="{{item.src}}" mode="" />
+              </swiper-item>
+            </swiper>
+          </view>
+
+        </view>
+
+        <view>
+          <swiper class="swiper-container2" indicator-dots indicator-color="gray" indicator-active-color="red">
+            <swiper-item>
+              <view wx:for="{{list2_1}}" wx:key="id">
+                <image src="{{item.src}}" mode="" />
+                <text>{{item.text}}</text>
+              </view>
+            </swiper-item>
+            <swiper-item>
+              <view wx:for="{{list2_2}}" wx:key="id">
+                <image src="{{item.src}}" mode="" />
+                <text>{{item.text}}</text>
+              </view>
+            </swiper-item>
+          </swiper>
+        </view>
+
+        <view class="miaosha">
+          <view class="ms">
+            <view class="bt">
+              <text>京东秒杀</text>
+              <text>{{dianchang}}</text>
+              <image class="dc" src="/images/dc.png" mode="" />
+              <view>
+                <text>{{miaosha.s}}</text>
+                <text> :</text>
+                <text>{{miaosha.f}}</text>
+                <text> :</text>
+                <text>{{miaosha.m}}</text>
+              </view>
+              <image class="jt" src="/images/jt.png" mode="" />
+            </view>
+            <view class="nr">
+              <scroll-view class="msscroll" scroll-x="true">
+                <view wx:for="{{dcms}}" wx:key="id">
+                  <image src="{{item.src}}" mode="" />
+                  <text>{{item.price}}</text>
+                </view>
+                <view class="zhyg">
+                  <image src="/images/jtz.png" mode="" />
+                  <text>查看全部</text>
+                </view>
+              </scroll-view>
+            </view>
+          </view>
+        </view>
+
+        <view class="cpzs">
+          <view class="cp" wx:for="{{cp}}" wx:key="id">
+            <image src="{{item.src}}" mode="" />
+            <view class="cpbt">
+              <view>
+                <image src="{{item.qudao}}" mode="" />
+              </view>
+              {{item.bt}}
+            </view>
+            <view class="zw">
+              <view>￥<text>{{item.price}}</text>.00</view><image src="/images/dsj.png" mode=""/><text>{{item.yj}}</text>
+            </view>
+            <view class="bottm">
+              <image src="{{item.wl}}" mode=""/>
+              <text>看相似</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

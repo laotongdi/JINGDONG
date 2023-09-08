@@ -1,0 +1,31 @@
+<!--pages/message/message.wxml-->
+<view class="gwct">
+  <image src="/images/gwc.png" mode="" />
+  <text>购物车空空如也，去逛逛吧~</text>
+</view>
+
+<tj>可能你还想要</tj>
+
+<view class="cpzs">
+  <view class="cp" wx:for="{{cp}}" wx:key="id">
+    <image src="{{item.src}}" mode="" />
+    <view class="cpbt">
+      <view>
+        <image src="{{item.qudao}}" mode="" />
+      </view>
+      {{item.bt}}
+    </view>
+    <view class="zw">
+      <view>￥<text>{{item.price}}</text>.00</view>
+      <image src="/images/dsj.png" mode="" /><text>￥{{item.yj}}</text>
+    </view>
+    <view class="bottm">
+      <image src="{{item.wl}}" mode="" />
+      <text>看相似</text>
+    </view>
+  </view>
+</view>
+
+<view class="fix_btn" hidden='{{no_scroll}}' bindtap="goTop">
+  <image class="icon" src="/images/gotop - red.png"></image>
+</view>

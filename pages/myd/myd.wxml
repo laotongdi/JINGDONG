@@ -1,0 +1,135 @@
+<!--pages/myd/myd.wxml-->
+<view class="grzl">
+  <image class="bj" src="/images/bj.png" mode="" />
+  <view class="zlzs">
+    <view class="txwk">
+      <image class="tx" src="/images/tx.png" mode="" />
+    </view>
+
+    <view class="yname">
+      <view>
+        <text>jd_4af58023bc347</text>
+        <view>
+          <image src="/images/xtx.png" mode="" />
+        </view>
+      </view>
+
+      <view class="bq">
+        <text>京享值</text>
+        <text>小白守约722分</text>
+        <image class="yjz" src="/images/yjz.png" mode="" />
+        <image class="sz" src="/images/sz.png" mode="" />
+      </view>
+    </view>
+  </view>
+
+  <view class="ktvip">
+    <image class="hg" src="/images/hg.png" mode="" />
+    <image class="bj2" src="/images/bj2.png" mode="" />
+    <view class="fl">
+      <text class="fjd">10倍返京豆</text>
+      <view class="yyyh">
+        <image class="fltp" src="/images/qing.png" mode="" />
+        <view>
+          <view class="zzs">开PLUS<view class="xiaojiantou"></view>
+          </view>
+          <view>¥69年卡</view>
+        </view>
+      </view>
+      <view class="yyyh">
+        <image class="fltp" src="/images/jd.png" mode="" />
+        <view>
+          <view class="zzs">专享优惠<view class="xiaojiantou"></view>
+          </view>
+          <view>低至469</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="dasan">
+    <view class="dingdan">
+      <view class="zuji">
+        <view>
+          <text>商品收藏</text> 2
+        </view>
+        <view>
+          <text>店铺收藏</text> 11
+        </view>
+        <view>
+          <text>我的足迹</text> 4
+        </view>
+      </view>
+      <view class="dddddd">
+        <view wx:for="{{list}}" wx:key="id">
+          <image src="{{item.src}}" mode="" />
+          <text>{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="caichan">
+      <view>
+        <view>
+          <text>0</text>
+        </view>
+        <text>优惠券</text>
+      </view>
+      <view>
+        <view>
+          <text>4,000.00</text>
+        </view>
+        <text>白条额度</text>
+      </view>
+      <view>
+        <view>
+          <text>164</text>
+        </view>
+        <text>京豆</text>
+      </view>
+      <view>
+        <view>
+          <text>0</text>
+        </view>
+        <text>红包</text>
+      </view>
+      <view>
+        <image src="/images/wqb.png" mode="" />
+        <text>全部资产</text>
+      </view>
+    </view>
+
+    <view class="pppppp">
+      <view wx:for="{{list2}}" wx:key="id">
+        <image src="{{item.src}}" mode="" />
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+<tj>为您推荐</tj>
+
+<view class="cpzs">
+  <view class="cp" wx:for="{{cp}}" wx:key="id">
+    <image src="{{item.src}}" mode="" />
+    <view class="cpbt">
+      <view>
+        <image src="{{item.qudao}}" mode="" />
+      </view>
+      {{item.bt}}
+    </view>
+    <view class="zw">
+      <view>￥<text>{{item.price}}</text>.00</view>
+      <image src="/images/dsj.png" mode="" /><text>{{item.yj}}</text>
+    </view>
+    <view class="bottm">
+      <image src="{{item.wl}}" mode="" />
+      <text>看相似</text>
+    </view>
+  </view>
+</view>
+
+<view class="fix_btn" hidden='{{no_scroll}}' bindtap="goTop">
+  <image class="icon" src="/images/gotop - red.png"></image>
+</view>

@@ -1,0 +1,372 @@
+/* pages/myd/myd.wxss */
+page {
+  background-color: rgb(245, 245, 245);
+}
+.grzl .bj {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 800rpx;
+}
+
+.grzl .zlzs {
+  padding: 50rpx 25rpx 0;
+}
+
+.zlzs {
+  display: flex;
+}
+
+.zlzs .txwk {
+  overflow: hidden;
+  width: 120rpx;
+  height: 120rpx;
+  box-shadow: 0 4px 8px 0 rgb(250 44 25 / 8%);
+  border-radius: 120rpx;
+  margin-right: 20rpx;
+}
+
+.zlzs .tx {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.yname view:first-child view {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+}
+
+.yname view:first-child text {
+  font-size: 36rpx;
+}
+
+.yname view:first-child image {
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: bottom;
+}
+
+.bq {
+  position: relative;
+  display: flex;
+  padding-top: 20rpx;
+  font-size: 20rpx;
+  width: 563rpx;
+}
+
+.bq text {
+  height: 16px;
+  line-height: 17px;
+  padding: 0 14px 0 6px;
+  margin: 0 6px 0 0;
+  border-radius: 15px;
+  font-size: 10px;
+  background: hsla(0, 0%, 100%, .68);
+  border: 1px solid #f8cfce;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.bq .yjz {
+  position: absolute;
+  top: 30rpx;
+  right: 276rpx;
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.bq .sz {
+  position: absolute;
+  top: 18rpx;
+  right: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/*  */
+.ktvip {
+  position: relative;
+  padding: 25rpx 25rpx 10rpx;
+}
+
+.hg {
+  position: absolute;
+  top: 5rpx;
+  left: 50rpx;
+  width: 50rpx;
+  height: 60rpx;
+}
+
+.bj2 {
+  width: 100%;
+  height: 110rpx;
+}
+
+.fl {
+  position: absolute;
+  display: flex;
+  top: 10rpx;
+}
+
+.fl .fjd {
+  display: inline-block;
+  font-size: 12px;
+  color: #996300;
+  margin-top: 73rpx;
+  margin-left: 70rpx;
+}
+
+.fltp {
+  margin-right: 10rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.yyyh {
+  display: flex;
+  margin-top: 35rpx;
+  margin-left: 70rpx;
+}
+
+.yyyh:last-child {
+  margin-left: 0;
+}
+
+.zzs {
+  color: #8c5c25;
+  font-size: 24rpx;
+  font-weight: 700;
+}
+
+.zzs+view {
+  color: #8c5c25;
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  width: 140rpx;
+}
+
+.xiaojiantou {
+  position: relative;
+  left: 1rpx;
+  display: inline-block;
+  width: 6rpx;
+  height: 6rpx;
+  border-left: 2rpx solid #945914;
+  border-bottom: 2rpx solid #945914;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+/*  */
+.dasan {
+  padding: 0rpx 25rpx 10rpx;
+}
+
+.dingdan {
+  border-radius: 25rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.dingdan .zuji {
+  display: flex;
+  justify-content: space-around;
+  font-size: 24rpx;
+  font-weight: 700;
+  line-height: 68rpx;
+  background-color: rgb(245, 245, 245);
+}
+.dingdan .zuji text {
+  font-weight: 500;
+}
+
+.dddddd {
+  display: flex;
+  justify-content: space-around;
+  font-size: 24rpx;
+  padding-top: 12rpx;
+  padding-bottom: 30rpx;
+}
+
+.dddddd image {
+  display: block;
+  margin: 0 auto;
+  width: 70rpx;
+  height: 70rpx;
+  padding: 0 20rpx 0;
+}
+.dddddd text {
+  display: block;
+  text-align: center;
+}
+
+.caichan {
+  border-radius: 25rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  font-size: 24rpx;
+  padding: 20rpx 15rpx;
+  margin-top: 20rpx;
+}
+
+.caichan image {
+  display: block;
+  margin: 0 auto;
+  width: 70rpx;
+  height: 70rpx;
+}
+.caichan view view {
+  text-align: center;
+  height: 70rpx;
+}
+.caichan view text {
+  display: block;
+  text-align: center;
+  margin-top: 5rpx;
+  color: #262626;
+  line-height: 1.2;
+}
+.caichan view view text {
+  display: inline-block;
+  margin-top: 15rpx;
+  font-weight: 700;
+  font-size: 36rpx;
+}
+
+.pppppp {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 24rpx;
+  font-size: 24rpx;
+  padding-top: 12rpx;
+  padding-bottom: 30rpx;
+  margin-top: 20rpx;
+}
+
+.pppppp image {
+  display: block;
+  margin: 0 auto;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+/*  */
+.cpzs {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cp {
+  width: 49%;
+  height: 600rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+}
+
+.cpzs .cp image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.cpzs .cp .bottm {
+  margin-top: 20rpx;
+}
+
+.cpzs .cp .bottm image {
+  margin-left: 10rpx;
+  width: 140rpx;
+  height: 40rpx;
+}
+
+.cpzs .cp .bottm text {
+  position: relative;
+  bottom: 12rpx;
+  right: -50rpx;
+  display: inline-block;
+  background-color: rgb(236, 231, 231);
+  width: 106rpx;
+  padding: 5rpx 0 5rpx 20rpx;
+  font-weight: 100;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  margin-right: 10rpx;
+}
+
+.cpzs .cp .cpbt {
+  padding: 15rpx;
+  font-size: 30rpx;
+  line-height: 1.9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+}
+
+.cpzs .cp .cpbt view {
+  display: inline-block;
+  position: relative;
+  top: 0.1rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.25rem;
+}
+
+.cpzs .cp .cpbt image {
+  width: 130rpx;
+  height: 38rpx;
+}
+
+.cpzs .cp .zw {
+  color: red;
+  display: flex;
+}
+.cpzs .cp .zw view text {
+  color: red;
+  font-size: 50rpx;
+}
+
+.cpzs .cp .zw image {
+  display: inline-block;
+  width: 80rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+  padding-top: 24rpx;
+}
+.cpzs .cp .zw>text {
+  padding-top: 24rpx;
+  font-size: 25rpx;
+  color: rgb(139, 136, 136);
+}
+/*  */
+.fix_btn {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  z-index: 10;
+  bottom: 100rpx;
+  right: 20rpx;
+}
+
+
+.icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

@@ -1,0 +1,6 @@
+<!--components/tuij/tuij.wxml-->
+<view class="tuijian">
+  <view class="tjz"></view>
+  <view class="tjzj"><slot></slot></view>
+  <view class="tjy"></view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/search/search.wxml-->
+<view class="top">
+  <view class="nav">
+    <image src="/images/fh.png" bindtap="goBack" mode="" />
+    <input type="text" placeholder="{{jieshou}}" />
+    <text class="button">搜索</text>
+  </view>
+</view>
+
+<view class="nr">
+  <view class="nrt">
+    <text class="left">热门搜索</text>
+    <view bindtap="dianji">
+      <text wx:if="{{flag}}" class="right">隐藏</text>
+      <text wx:else class="right">显示</text>
+    </view>
+  </view>
+  <view wx:if="{{flag}}" class="nrb">
+    <text wx:for="{{list}}" wx:key="id">{{item.text}}</text>
+  </view>
+  <view wx:else class="nrb">
+    <text style="color: #999;background-color: #fff;">已隐藏搜索发现</text>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<!--pages/classify/classify.wxml-->
+<view class="top">
+  <image src="/images/sousuo.png" bindtap="go" mode="" />
+  <text>购物车</text>
+</view>
+
+<view class="body">
+  <view>
+    <scroll-view class="cbl" scroll-top="{{gotop}}" scroll-with-animation scroll-y>
+      <view bindtap="jiaodian" wx:for="{{list}}" wx:key="id" data-id="{{item.id}}" class="{{flag==item.id?'xuanzhong':''}}">{{item.text}}</view>
+    </scroll-view>
+  </view>
+  <view class="nrwai">
+    <scroll-view wx:for="{{list}}" wx:key="id" class="nr" wx:if="{{flag == item.id}}" scroll-y>
+      <view class="leiqu">
+        <view class="biaoti">{{item.text1}}</view>
+        <view class="cphz">
+          <view class="cp" wx:for="{{item.bt1}}" wx:key="id">
+            <image src="{{item.src}}" mode="" />
+            <view>{{item.nr}}</view>
+          </view>
+        </view>
+        <view wx:if="{{item.text2}}" class="biaoti">{{item.text2}}</view>
+        <view wx:if="{{item.text2}}" class="cphz">
+          <view class="cp" wx:for="{{item.bt2}}" wx:key="id">
+            <image src="{{item.src}}" mode="" />
+            <view>{{item.nr}}</view>
+          </view>
+        </view>
+        <view wx:if="{{item.text3}}" class="biaoti">{{item.text2}}</view>
+        <view wx:if="{{item.text3}}" class="cphz">
+          <view class="cp" wx:for="{{item.bt3}}" wx:key="id">
+            <image src="{{item.src}}" mode="" />
+            <view>{{item.nr}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
